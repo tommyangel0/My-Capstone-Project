@@ -1,0 +1,333 @@
+---
+title: "Telehealth Disparities in Cancer Care Analysis"
+author: "Tommy Angel"
+date: "05/21/2024"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+## install packages if necessary
+list.of.packages <- c("ggplot2", "dplyr", "lubridate", "forcats", "ggthemes", "knitr", "rmarkdown")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages)
+
+## load packages
+library(ggplot2)
+library(tidyverse)
+library(lubridate)
+library(forcats)
+library(ggthemes)
+library(knitr)
+```
+
+*Note*: If you try to Knit this document at this time, you *will* get an error because there is code in this document that has to be edited (by you!) before it will be able to successfully knit!
+
+### The Data
+
+Electronic heath record (EHR) data is an electronic version of patients' medical charts. It may include data on a person's demographics, health status, medical care, and medical appointments. One key feature of EHR is that information can be created, managed, and shared across multiple health care organizations and doctors. It is updated and maintained in real time, making new information available instantaneously. A large number of statistical analyses utilize EHR data to answer questions about patient populations and their health outcomes.
+
+This data has been pulled from the Mount Sinai Health System. It contains information on patients seeking oncology treatment. Each observation represents one patient's visit to the Mount Sinai Hospital. Included in the data are main demographic variables such as patient's age, sex, race, and marital status. The data also includes the patient's reason for their medical visit. Finally, the data contains information on the patient's medical appointment, including the time duration and whether the appointment was conducted in-person or remotely using telehealth. You can find the data dictionary in the same folder as the data.
+
+### Accessing and Importing the Data
+
+For this project, you'll get the raw data directly from the source. Download the `.csv` file and upload it to `data/raw_data` folder on RStudio.cloud. To load the data in, **run the code in the `ehr-data` code chunk** to create an object called `ehr`.
+
+Note that this data has been deidentified so that it does not contain direct identifiers of patient data. This is an important step in protecting patients' privacy.
+
+```{r ehr-data, warning=FALSE}
+ehr <-read_csv("Data/raw_data/ehr_data.csv")
+```
+
+### Exploratory Analysis of Data
+
+1.  The data dictionary is available as `ehr_data_dictionary.pdf.` From the data dictionary, what is the variable that shows whether a patient has set up their online patient portal?
+
+[type answer here: online_portal]
+
+2.  From the data dictionary, the variable that represents the telehealth status of appointments can one of take two values, 0 or 1. Which value does 0 represent?
+
+[type answer here: In Person]
+
+3.  Describe this data in your own words. Is it observational or experimental? Why? Is this data cross-sectional or longitudinal? Why? How many observations are there?
+
+[type answer here: This data is observational because it involves the observation of patients' characteristics and behaviors without any manipulation by the researcher. It´s cross-sectional because the data was collected at a single point in time and there are 476 observations in the dataset.]
+
+4.  How much time, on average, does a patient spend at their appointment?
+
+[type answer here: 40.69328 minutes ]
+
+```{r initial-exploration}
+### Add Code Here
+mean(ehr$duration)
+```
+
+5.  Create a new variable called `duration_hrs`, which represents the time spent at each appointment in hours instead of minutes. What is the longest time someone has spent at an appointment (in hours)?
+
+[type answer here: 2 hours]
+
+```{r duration-hrs}
+
+# create new variable
+ehr <- mutate(ehr, duration_hrs = duration / 60)
+
+# get longest appointment
+max(ehr$duration_hrs)
+
+```
+
+6.  We are going to answer whether in-person or telehealth appointments are longer. Start by grouping appointments by their telehealth status and calculate the average time in-person and telehealth visits last. Use the code chunk telehealth-time-analysis in the .Rmd file. Note that you should replace FUNCTION in order to calculate the average of the variable duration.
+
+Which type of appointment lasts longer?
+
+[type answer here: In Person]
+
+```{r telehealth-time-analysis}
+### Add Code Here
+ehr %>% 
+  # group by telehealth status
+  group_by(telehealth) %>% 
+  # calculate average time per appointment type
+  summarize(avg_duration = mean(duration_hrs, na.rm = TRUE))
+```
+
+7.  Use the table function to explore the timeframe variable, which indicates what time of day the medical appointment occurred. What is the most popular timeframe for an appointment? What is the least popular?
+
+[type answer here: Most Popular is 11am - 3pm and the Least Popular is 3pm - 7pm]
+
+```{r timeframe-analysis}
+### Add Code Here
+table(ehr$timeframe)
+```
+
+### Data Visualization
+
+8.  Create a plot that shows the breakdown of how many patients live in each borough. Which borough is most popular? Which is least popular?
+
+[type answer here:Most Popular borough is Manhattan and the Least Popular borough is Staten Island]
+
+```{r borough-plot}
+# refactor the borough variable
+ehr$borough <- fct_relevel(ehr$borough, 'Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island', 'Outside NYC')
+
+### Add code to generate plot here
+ggplot(ehr, aes(x = borough)) +
+  geom_bar(fill = "blue")
+```
+
+Extend your plot by adding a main title, axis titles, changing the theme, and adding additional features as you prefer. Do the same for all following plots.
+
+```{r borough-plot-refined}
+### Add Code Here
+ggplot(ehr, aes(x = borough)) +
+  geom_bar(fill = "blue") +
+  labs(title = "Distribution of Patients by Borough",
+       x = "Borough",
+       y = "Number of Patients") +
+  theme_minimal()
+```
+
+9.  Create a density plot of the variable age using ggplot2:
+
+```{r childcare-density-plot}
+### Add Plotting Code Here
+ggplot(ehr, aes(x = age)) +
+  geom_density(fill = "lightblue", color = "darkblue") +
+  labs(title = "Distribution of Patient Ages", x = "Age", y = "Density")   
+```
+
+### Regression Analysis
+
+Now, we are going to explore what factors affect whether a patient chooses to have an in-person or telehealth appointment.
+
+For each of these relationships, present your results in a table or a graph. Feel free to use the data dictionary to find the variables of interest. Add your code in the appropriate `exploratory-analysis` code chunk in the .Rmd file.
+
+The next three questions are fairly open-ended to allow you more freedom in choosing how to explore these relationships and comment on findings.
+
+1.  Comment on telehealth usage by race. Use a table or plot to explore this. Remember that it may be more informative to look at proportions instead of raw counts because some groups may naturally be larger in size than others.
+
+[type your answer here: It seems that there's a higher proportion of Asians that use telehealth than the other races.]
+
+```{r exploratory-analysis1}
+## add your exploratory analysis code here
+ehr %>%
+  group_by(race) %>%
+  summarize(mean_telehealth = mean(telehealth == 1)) %>%
+  ggplot(aes(x = race, y = mean_telehealth)) +
+    geom_bar(stat = "identity", fill = "blue")
+
+
+ehr %>%
+  group_by(telehealth, race) %>%
+  summarize(n = n()) %>%
+  mutate(prop = n/sum(n))%>%
+  ggplot(aes(x = race, y = prop))+ 
+    geom_bar(stat = "identity") + 
+    facet_wrap(~telehealth)
+  
+
+```
+
+2.  Comment on the telehealth usage among various insurance groups. Use a table or plot to explore this.
+
+[type your answer here: People with commercial insurance tend to use telehealth as an option more than ones with other insurance types.]
+
+```{r exploratory-analysis2}
+## add your exploratory analysis code here
+ehr %>%
+  group_by(insurance) %>%
+  summarize(mean_telehealth = mean(telehealth == 1))%>%
+  ggplot(aes(x = insurance, y = mean_telehealth)) +
+  geom_bar(stat = "identity")
+
+ehr %>%
+  group_by(telehealth, insurance) %>%
+  summarize(n = n()) %>%
+  mutate(prop = n/sum(n))%>%
+  ggplot(aes(x = insurance, y = prop))+ 
+    geom_bar(stat = "identity") + 
+    facet_wrap(~telehealth)
+  
+```
+
+3.  Create a new variable called `age_bin` which groups patients into "\<65" if they are less than 65 years old or "65+" if they are 65 years or older. Comment on telehealth use by both race and age group. For instance, you can calculate or visualize the difference in proportion of patients by both race and age group for telehealth vs in-person services. Comment on your findings.
+
+[type your answer here: Regardless of the race, people under the age of 65 still preferred to be in-person rather than use telehealth.]
+
+```{r exploratory-analysis65yearold}
+
+## create a new variable called age_bin
+ehr <- ehr %>%
+  mutate(age_bin = ifelse(age < 65, "<65", "65+"))
+
+ehr <- ehr %>%
+  mutate(telehealth_bin = ifelse(telehealth == 0, "in-person", "telehealth"),
+         telehealth_bin = factor(telehealth_bin))
+
+ehr %>%
+  group_by(race, age_bin, telehealth_bin) %>%
+  summarize(n = n()) %>%
+  mutate(prop = n/sum(n)) %>%
+  ggplot(aes(x = race, y = prop, fill = age_bin)) + 
+    geom_bar(stat = "identity", position = "dodge") + 
+    facet_wrap(~telehealth_bin) +
+    labs(title = "Proportion of Age Groups (65) by Race and Telehealth Usage", 
+         x = "Race", 
+         y = "Proportion of Total People") + 
+    theme(plot.title = element_text(hjust = 0.5, size = 14, face = "bold"))
+
+   
+  
+```
+
+
+4.  In the exercise above, we looked at bilateral (two-way) relationships. For instance, we looked at how appointment type and race are related. You have learned in this course, however, that other confounding variables can be a source of bias in your analysis. For instance, the effect of online portal status on appointment type can be biased by the age of the person. Maybe younger people are more likely to have a portal set up because they spend more time online. It’s much better to look at the relationship of all relevant variables associated with appointment type together. Run a logistic regression on telehealth status versus race, age, gender, language, insurance, and online portal activation status. Set the reference group for race to be White. Be sure to use the continuous variable for age.
+
+Add your code in the reg-analysis code chunk.
+
+```{r reg-analysis}
+ehr$race <- fct_relevel(ehr$race, "White", "Black", "Asian", "Other")
+reg_model <- glm(telehealth_bin ~ race + age + gender + language + insurance + online_portal, data=ehr, family="binomial")
+summary(reg_model)
+
+```
+
+a.  What is the coefficient on Black race?
+
+[type answer here: -0.526707]
+
+b.  When analyzing results from a logistic regression model, converting the coefficients to an odds ratio is easier to interpret. Convert the above coefficient into an odds ratio.
+
+    ```{r}
+    exp(coef(reg_model))
+    ```
+
+[type answer here: 0.5905462]
+
+c.  Odds ratios can be interpreted as "The odds of group X having outcome Y is [BLANK] higher as compared to the reference group." Interpret the odds ratio for Black patients in the context of the problem.
+
+[type answer here: The odds of raceBlack having a telehealth visit is 0.5905462 times lower as compared to patients who are white. So therefore patients who are black are less likely to partake in telehealth visits than patients who are white.]
+
+d.  Is the coefficient for Black patients significant at the 5% level? Is it significant at the 10% level?
+
+[type answer here: yes the coefficient for black patients is significant at the 10% level but not the 5% level.]
+
+e.  As patients get older, are their odds of having a telehealth visit higher or lower than compared to younger patients? Can you think of why this may be the case?
+
+[type answer here: Lower as when age increases the their odds decreases by 0.018265.]
+
+### Data Visualization
+
+Finally, in this last step, we are going to create a graph that explores the relationship between at least 3 variables at once. Generate a plot that explores the relationship between at least 3 variables (any variable is fine - does not have to be telehealth specific this time). Add any aesthetics or features to make this graph presentable and easy to understand. Remember to add labels and titles. Finally, save the plot to your files.
+
+```{r individual-plot}
+ggplot(ehr, aes(x = age, fill = telehealth_bin)) +
+  geom_bar(position = "dodge", alpha = 0.8) +
+  scale_fill_manual(values = c("in-person" = "blue", "telehealth" = "orange")) +
+  labs(title = "Distribution of Age by Telehealth Usage",
+       x = "Age",
+       y = "Count") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(hjust = 0.5, size = 14, face = "bold"), legend.position = "none"
+  ) +
+  facet_wrap(~telehealth_bin)
+
+```
+```{r}
+ggsave("agetelehealth_plot.png", width = 8, height = 6, units = "in", dpi = 300)
+```
+
+
+```{r}
+ggplot(ehr, aes(x = race)) +
+  geom_bar() +
+  labs(title = "Relationship between Race and Telehealth Usage",
+       x = "Race",
+       y = "Count") +
+  theme_minimal() +
+  facet_wrap(~telehealth_bin)
+```
+
+```{r save-plot}
+ggsave("TFtelehealth_plot.png", width = 8, height = 6, units = "in", dpi = 300)
+```
+
+```{r}
+sessionInfo()
+```
+
+
+
+
+
+
+
+```{r reg-analysisFORPOSTER}
+ehr$race <- fct_relevel(ehr$race, "White", "Black", "Asian", "Other")
+reg_model <- glm(telehealth_bin ~ race + age, data=ehr, family="binomial")
+summary(reg_model)
+
+```
+    
+```{r POSTERCOEF}
+    exp(coef(reg_model))
+```
+
+
+
+```{r explora-analysisGENDERTEST}
+
+ehr %>%
+  group_by(race, gender, telehealth_bin) %>%
+  summarize(n = n()) %>%
+  mutate(prop = n/sum(n)) %>%
+  ggplot(aes(x = race, y = prop, fill = gender)) + 
+    geom_bar(stat = "identity", position = "dodge") + 
+    facet_wrap(~telehealth_bin) +
+    labs(
+      title = "Proportion of People's Race by Gender \nin Relation to Telehealth Usage", x = "Race", y = "Proportion of Total People") + 
+    scale_fill_manual(values = c("Male" = "skyblue", "Female" = "pink")) +
+    theme(plot.title = element_text(hjust = 0.5, size = 14, face = "bold"))
+```

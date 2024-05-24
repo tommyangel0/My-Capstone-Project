@@ -1,0 +1,477 @@
+"id","age","gender","race","marital_status","language","insurance","borough","online_portal","visit_reason","duration","timeframe","telehealth"
+"1",51,"Male","Other","Not Married","English","Medicaid","Brooklyn","Activated","Other",30,"11am-3pm",1
+"2",81,"Female","Other","Not Married","English","Medicare","Bronx","Activated","Other",30,"11am-3pm",0
+"3",89,"Female","Black","Not Married","English","Medicare","Manhattan","Activated","Other",30,"3pm-7pm",0
+"4",79,"Male","White","Married","English","Self-pay","Manhattan","Activated","Other",60,"11am-3pm",0
+"5",70,"Female","White","Not Married","English","Self-pay","Manhattan","Activated","Other",30,"7am-11am",0
+"6",60,"Male","Black","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"3pm-7pm",0
+"7",80,"Female","Black","Not Married","English","Medicare","Brooklyn","Activated","Other",30,"11am-3pm",1
+"8",66,"Female","Other","Not Married","English","Medicare","Manhattan","Activated","Primary Cancer Treatment",60,"7am-11am",1
+"9",76,"Female","White","Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",0
+"10",64,"Male","White","Not Married","English","Medicaid","Manhattan","Activated","Other",60,"7am-11am",0
+"11",39,"Female","Black","Not Married","English","Medicare","Manhattan","Activated","Other",30,"7am-11am",1
+"12",67,"Female","Other","Married","English","Medicare","Outside NYC","Activated","Other",60,"11am-3pm",0
+"13",56,"Female","Other","Not Married","English","Medicaid","Manhattan","Inactivated","Side Effects",30,"3pm-7pm",0
+"14",58,"Female","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",60,"11am-3pm",1
+"15",61,"Male","Other","Not Married","English","Medicaid","Manhattan","Activated","Other",30,"11am-3pm",0
+"16",57,"Female","Other","Not Married","English","Self-pay","Bronx","Activated","Side Effects",60,"11am-3pm",0
+"17",66,"Female","White","Not Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"11am-3pm",0
+"18",60,"Female","Other","Not Married","English","Medicaid","Bronx","Activated","Side Effects",30,"7am-11am",1
+"19",60,"Male","Other","Not Married","English","Medicaid","Manhattan","Activated","Other",30,"7am-11am",0
+"20",64,"Female","Black","Not Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"11am-3pm",0
+"21",68,"Female","Other","Not Married","English","Medicare","Bronx","Activated","Other",60,"11am-3pm",0
+"22",94,"Male","White","Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",0
+"23",69,"Male","Other","Married","Spanish","Commercial","Queens","Inactivated","Side Effects",30,"3pm-7pm",0
+"24",81,"Male","White","Not Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",0
+"25",80,"Female","Asian","Not Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",1
+"26",54,"Male","Other","Not Married","English","Medicaid","Manhattan","Pending","Other",30,"7am-11am",0
+"27",63,"Female","Black","Not Married","English","Medicaid","Manhattan","Pending","Other",60,"7am-11am",1
+"28",71,"Male","White","Married","English","Commercial","Manhattan","Activated","Other",30,"7am-11am",1
+"29",67,"Male","Other","Married","English","Commercial","Manhattan","Inactivated","Side Effects",60,"3pm-7pm",1
+"30",80,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",0
+"31",62,"Female","Black","Married","English","Commercial","Manhattan","Activated","Other",30,"3pm-7pm",0
+"32",58,"Female","Black","Not Married","English","Commercial","Manhattan","Activated","Other",30,"11am-3pm",0
+"33",64,"Female","Other","Married","English","Medicaid","Bronx","Pending","Side Effects",60,"11am-3pm",0
+"34",60,"Female","Black","Not Married","English","Medicaid","Queens","Pending","Side Effects",60,"7am-11am",0
+"35",77,"Male","White","Not Married","English","Self-pay","Bronx","Pending","Other",60,"11am-3pm",0
+"36",73,"Female","White","Married","English","Medicare","Brooklyn","Activated","Primary Cancer Treatment",60,"11am-3pm",0
+"37",83,"Female","Other","Not Married","English","Medicare","Bronx","Activated","Side Effects",30,"11am-3pm",0
+"38",47,"Female","Black","Not Married","English","Medicaid","Bronx","Activated","Side Effects",30,"11am-3pm",1
+"39",51,"Male","Black","Not Married","English","Commercial","Manhattan","Activated","Side Effects",30,"11am-3pm",0
+"40",54,"Female","Other","Not Married","English","Commercial","Manhattan","Pending","Side Effects",30,"11am-3pm",1
+"41",52,"Female","Other","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"11am-3pm",0
+"42",85,"Female","Other","Not Married","English","Medicare","Bronx","Activated","Other",30,"7am-11am",0
+"43",68,"Male","Black","Not Married","English","Medicare","Brooklyn","Inactivated","Side Effects",30,"11am-3pm",0
+"44",64,"Male","Other","Not Married","English","Commercial","Manhattan","Inactivated","Other",30,"11am-3pm",0
+"45",85,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",0
+"46",64,"Female","Black","Not Married","English","Medicaid","Manhattan","Inactivated","Side Effects",60,"7am-11am",0
+"47",80,"Male","Other","Not Married","English","Medicare","Queens","Activated","Other",60,"11am-3pm",0
+"48",89,"Male","White","Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",0
+"49",80,"Female","Black","Not Married","English","Medicare","Manhattan","Activated","Other",60,"11am-3pm",0
+"50",64,"Male","Other","Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",1
+"51",79,"Male","Asian","Married","English","Medicare","Manhattan","Activated","Primary Cancer Treatment",20,"3pm-7pm",1
+"52",42,"Female","Black","Not Married","English","Commercial","Manhattan","Activated","Side Effects",30,"3pm-7pm",0
+"53",55,"Female","Black","Not Married","English","Medicaid","Manhattan","Activated","Other",30,"7am-11am",1
+"54",63,"Male","Other","Not Married","Spanish","Medicaid","Bronx","Activated","Side Effects",60,"11am-3pm",0
+"55",63,"Male","White","Married","Spanish","Medicare","Queens","Pending","Side Effects",30,"11am-3pm",0
+"56",25,"Female","White","Not Married","English","Commercial","Manhattan","Activated","Side Effects",60,"7am-11am",1
+"57",67,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"3pm-7pm",1
+"58",85,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Side Effects",60,"3pm-7pm",0
+"59",91,"Female","White","Not Married","English","Medicare","Brooklyn","Activated","Side Effects",60,"11am-3pm",1
+"60",30,"Female","Black","Not Married","English","Medicare","Queens","Activated","Side Effects",30,"11am-3pm",1
+"61",70,"Female","Black","Married","English","Medicare","Manhattan","Activated","Other",60,"11am-3pm",0
+"62",72,"Male","White","Married","English","Medicare","Queens","Activated","Side Effects",30,"7am-11am",1
+"63",73,"Male","Other","Not Married","Spanish","Medicare","Queens","Inactivated","Other",60,"11am-3pm",0
+"64",43,"Male","Black","Not Married","English","Medicaid","Bronx","Activated","Side Effects",60,"7am-11am",0
+"65",53,"Male","Other","Married","English","Medicare","Manhattan","Activated","Side Effects",30,"11am-3pm",1
+"66",75,"Male","Asian","Married","English","Medicare","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"67",79,"Male","White","Married","English","Medicare","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"68",55,"Female","Other","Not Married","Spanish","Medicaid","Queens","Pending","Side Effects",60,"11am-3pm",0
+"69",39,"Male","White","Married","English","Commercial","Manhattan","Activated","Side Effects",30,"11am-3pm",1
+"70",53,"Female","Black","Married","English","Self-pay","Manhattan","Activated","Side Effects",60,"7am-11am",0
+"71",61,"Male","Black","Not Married","English","Medicare","Outside NYC","Activated","Side Effects",60,"7am-11am",0
+"72",41,"Male","Asian","Not Married","English","Medicaid","Manhattan","Activated","Other",30,"11am-3pm",0
+"73",78,"Female","Black","Not Married","English","Medicare","Brooklyn","Activated","Side Effects",30,"11am-3pm",1
+"74",85,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"75",61,"Male","Asian","Married","English","Medicaid","Manhattan","Pending","Primary Cancer Treatment",60,"7am-11am",0
+"76",74,"Female","Asian","Not Married","English","Medicare","Queens","Activated","Primary Cancer Treatment",60,"7am-11am",0
+"77",51,"Female","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"11am-3pm",1
+"78",91,"Male","White","Married","English","Self-pay","Outside NYC","Activated","Other",60,"3pm-7pm",0
+"79",83,"Male","White","Married","English","Medicare","Manhattan","Activated","Other",30,"7am-11am",0
+"80",64,"Male","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",60,"7am-11am",0
+"81",68,"Female","Other","Not Married","English","Medicare","Bronx","Activated","Side Effects",60,"11am-3pm",0
+"82",69,"Female","White","Married","English","Commercial","Queens","Pending","Side Effects",30,"7am-11am",0
+"83",71,"Male","Black","Not Married","English","Medicare","Bronx","Activated","Other",30,"11am-3pm",1
+"84",83,"Male","White","Married","English","Medicare","Manhattan","Inactivated","Other",60,"7am-11am",0
+"85",56,"Female","Black","Not Married","English","Commercial","Brooklyn","Activated","Side Effects",30,"7am-11am",0
+"86",88,"Female","Other","Not Married","English","Medicare","Queens","Activated","Other",20,"7am-11am",1
+"87",68,"Male","White","Married","English","Self-pay","Brooklyn","Activated","Side Effects",30,"11am-3pm",0
+"88",67,"Male","White","Not Married","English","Medicare","Manhattan","Pending","Other",30,"7am-11am",0
+"89",73,"Female","Black","Not Married","English","Medicare","Bronx","Pending","Other",60,"11am-3pm",0
+"90",91,"Male","Other","Married","English","Medicare","Bronx","Activated","Other",30,"11am-3pm",0
+"91",62,"Male","Black","Not Married","English","Self-pay","Manhattan","Inactivated","Side Effects",30,"7am-11am",0
+"92",59,"Female","Black","Not Married","English","Commercial","Manhattan","Activated","Other",60,"7am-11am",0
+"93",49,"Male","White","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"11am-3pm",0
+"94",39,"Male","Other","Married","English","Medicare","Brooklyn","Activated","Other",30,"3pm-7pm",1
+"95",43,"Male","Black","Not Married","English","Commercial","Manhattan","Activated","Other",60,"11am-3pm",0
+"96",68,"Male","Black","Married","English","Self-pay","Manhattan","Activated","Side Effects",60,"7am-11am",0
+"97",75,"Male","White","Married","English","Medicare","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"98",77,"Female","Black","Not Married","English","Medicare","Manhattan","Pending","Other",30,"7am-11am",0
+"99",74,"Female","Other","Not Married","Spanish","Medicare","Manhattan","Inactivated","Side Effects",60,"11am-3pm",0
+"100",39,"Male","Other","Married","English","Commercial","Queens","Activated","Side Effects",30,"11am-3pm",0
+"101",62,"Female","Other","Not Married","Spanish","Medicaid","Queens","Activated","Other",30,"11am-3pm",1
+"102",61,"Male","Other","Married","English","Medicare","Brooklyn","Activated","Other",30,"11am-3pm",0
+"103",66,"Female","White","Married","English","Commercial","Queens","Activated","Side Effects",30,"7am-11am",1
+"104",38,"Male","Other","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"11am-3pm",0
+"105",55,"Male","Other","Not Married","Spanish","Medicaid","Manhattan","Activated","Other",30,"11am-3pm",0
+"106",56,"Male","Black","Not Married","English","Medicaid","Staten Island","Inactivated","Side Effects",60,"7am-11am",0
+"107",74,"Female","Other","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"108",97,"Female","Black","Not Married","English","Medicare","Queens","Activated","Other",90,"11am-3pm",0
+"109",74,"Male","Other","Married","Spanish","Medicaid","Manhattan","Activated","Other",60,"7am-11am",1
+"110",78,"Male","White","Not Married","English","Medicare","Manhattan","Activated","Other",30,"7am-11am",1
+"111",75,"Male","White","Not Married","English","Medicare","Queens","Activated","Other",60,"11am-3pm",1
+"112",73,"Female","Black","Not Married","English","Medicare","Queens","Pending","Other",30,"7am-11am",0
+"113",64,"Female","Asian","Not Married","Other","Medicaid","Queens","Activated","Other",60,"7am-11am",0
+"114",68,"Female","Other","Married","Spanish","Commercial","Queens","Activated","Primary Cancer Treatment",60,"11am-3pm",0
+"115",54,"Female","Other","Married","English","Medicaid","Queens","Activated","Other",30,"7am-11am",0
+"116",56,"Male","White","Married","English","Medicare","Queens","Pending","Primary Cancer Treatment",60,"7am-11am",0
+"117",90,"Female","Other","Not Married","Spanish","Self-pay","Queens","Pending","Other",30,"3pm-7pm",0
+"118",74,"Female","Other","Married","Spanish","Self-pay","Queens","Pending","Side Effects",60,"11am-3pm",0
+"119",70,"Female","Other","Not Married","Other","Self-pay","Queens","Activated","Other",60,"7am-11am",0
+"120",60,"Male","Black","Married","English","Commercial","Queens","Activated","Side Effects",60,"11am-3pm",0
+"121",45,"Male","Other","Not Married","Spanish","Medicaid","Brooklyn","Inactivated","Side Effects",60,"11am-3pm",0
+"122",60,"Male","Black","Married","English","Medicaid","Manhattan","Activated","Other",30,"7am-11am",0
+"123",52,"Female","Black","Not Married","English","Medicaid","Brooklyn","Pending","Side Effects",30,"7am-11am",1
+"124",81,"Male","White","Married","English","Medicare","Outside NYC","Activated","Other",60,"7am-11am",0
+"125",68,"Female","Black","Not Married","English","Medicare","Queens","Activated","Side Effects",30,"7am-11am",0
+"126",83,"Female","White","Not Married","English","Medicare","Bronx","Activated","Other",30,"11am-3pm",0
+"127",66,"Female","Other","Not Married","Spanish","Medicaid","Bronx","Inactivated","Side Effects",30,"7am-11am",0
+"128",46,"Male","Asian","Not Married","English","Medicaid","Queens","Activated","Side Effects",30,"7am-11am",0
+"129",46,"Female","Black","Not Married","English","Commercial","Manhattan","Activated","Side Effects",30,"3pm-7pm",0
+"130",61,"Female","Black","Married","English","Medicaid","Queens","Activated","Other",30,"3pm-7pm",0
+"131",61,"Female","Black","Not Married","English","Medicare","Manhattan","Inactivated","Side Effects",30,"11am-3pm",0
+"132",57,"Male","Other","Not Married","English","Self-pay","Bronx","Pending","Other",60,"3pm-7pm",0
+"133",57,"Female","White","Married","English","Commercial","Manhattan","Activated","Other",30,"7am-11am",0
+"134",80,"Male","Other","Not Married","Spanish","Medicare","Manhattan","Activated","Side Effects",60,"7am-11am",0
+"135",46,"Female","Other","Not Married","Spanish","Medicaid","Queens","Activated","Side Effects",30,"11am-3pm",0
+"136",60,"Male","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"7am-11am",0
+"137",76,"Female","Other","Not Married","Spanish","Self-pay","Manhattan","Pending","Other",120,"11am-3pm",0
+"138",52,"Male","Other","Not Married","English","Medicaid","Queens","Pending","Side Effects",60,"3pm-7pm",0
+"139",57,"Male","Other","Not Married","English","Commercial","Manhattan","Pending","Other",60,"3pm-7pm",0
+"140",69,"Male","White","Not Married","English","Medicare","Manhattan","Pending","Other",60,"11am-3pm",0
+"141",57,"Female","Other","Married","English","Commercial","Manhattan","Inactivated","Side Effects",30,"11am-3pm",1
+"142",83,"Female","White","Not Married","English","Self-pay","Manhattan","Inactivated","Side Effects",30,"11am-3pm",0
+"143",32,"Male","Other","Married","English","Commercial","Queens","Activated","Side Effects",60,"11am-3pm",0
+"144",45,"Female","White","Not Married","English","Medicaid","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"145",56,"Female","White","Married","English","Commercial","Outside NYC","Activated","Other",60,"3pm-7pm",0
+"146",54,"Female","White","Married","English","Medicare","Outside NYC","Pending","Side Effects",60,"11am-3pm",0
+"147",76,"Male","Other","Married","Spanish","Medicare","Bronx","Pending","Side Effects",30,"11am-3pm",0
+"148",84,"Female","White","Not Married","English","Commercial","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"149",73,"Male","White","Married","English","Commercial","Brooklyn","Activated","Other",60,"11am-3pm",0
+"150",64,"Female","Black","Not Married","English","Medicare","Bronx","Activated","Side Effects",30,"7am-11am",1
+"151",78,"Female","Other","Married","English","Medicare","Staten Island","Activated","Side Effects",60,"11am-3pm",0
+"152",49,"Male","Other","Married","English","Medicare","Outside NYC","Activated","Other",60,"11am-3pm",0
+"153",64,"Male","Other","Married","Spanish","Medicare","Queens","Activated","Side Effects",20,"11am-3pm",0
+"154",64,"Male","White","Not Married","English","Self-pay","Brooklyn","Pending","Primary Cancer Treatment",60,"11am-3pm",0
+"155",68,"Female","Asian","Not Married","Other","Medicare","Brooklyn","Activated","Side Effects",30,"11am-3pm",1
+"156",58,"Male","White","Not Married","English","Self-pay","Queens","Activated","Side Effects",30,"7am-11am",0
+"157",62,"Female","Other","Not Married","English","Medicaid","Bronx","Activated","Side Effects",30,"7am-11am",0
+"158",54,"Male","Other","Not Married","English","Medicaid","Manhattan","Inactivated","Side Effects",30,"11am-3pm",0
+"159",51,"Male","Other","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",60,"7am-11am",0
+"160",47,"Male","Other","Not Married","English","Commercial","Queens","Activated","Other",60,"3pm-7pm",0
+"161",55,"Female","Black","Not Married","English","Commercial","Bronx","Activated","Side Effects",30,"11am-3pm",0
+"162",64,"Male","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"163",96,"Male","Other","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"11am-3pm",1
+"164",32,"Male","Other","Married","English","Medicaid","Queens","Activated","Side Effects",60,"7am-11am",0
+"165",63,"Female","Black","Not Married","English","Medicaid","Manhattan","Pending","Side Effects",60,"11am-3pm",0
+"166",38,"Female","Other","Not Married","English","Medicaid","Manhattan","Activated","Other",30,"11am-3pm",1
+"167",61,"Male","Other","Not Married","English","Self-pay","Manhattan","Inactivated","Side Effects",30,"11am-3pm",0
+"168",49,"Male","Asian","Not Married","English","Commercial","Manhattan","Activated","Side Effects",30,"11am-3pm",1
+"169",82,"Male","Asian","Married","Other","Medicare","Manhattan","Pending","Other",30,"11am-3pm",0
+"170",67,"Female","White","Married","English","Medicare","Manhattan","Activated","Other",60,"7am-11am",0
+"171",70,"Female","Black","Married","English","Medicare","Brooklyn","Activated","Side Effects",15,"7am-11am",0
+"172",64,"Male","Black","Married","English","Self-pay","Brooklyn","Activated","Primary Cancer Treatment",30,"11am-3pm",0
+"173",64,"Male","Other","Married","English","Commercial","Brooklyn","Activated","Other",30,"7am-11am",0
+"174",99,"Female","White","Not Married","English","Medicare","Brooklyn","Pending","Side Effects",60,"3pm-7pm",0
+"175",58,"Male","Other","Married","English","Medicaid","Queens","Activated","Side Effects",30,"11am-3pm",0
+"176",47,"Female","White","Married","English","Commercial","Bronx","Activated","Side Effects",60,"7am-11am",0
+"177",57,"Male","White","Not Married","English","Medicare","Outside NYC","Pending","Side Effects",30,"11am-3pm",0
+"178",59,"Male","White","Not Married","English","Medicaid","Manhattan","Activated","Side Effects",30,"3pm-7pm",0
+"179",54,"Male","Black","Married","English","Medicaid","Brooklyn","Pending","Other",60,"11am-3pm",0
+"180",65,"Male","Asian","Married","English","Medicaid","Bronx","Activated","Side Effects",30,"11am-3pm",1
+"181",68,"Male","White","Not Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",1
+"182",53,"Female","Other","Not Married","English","Commercial","Queens","Activated","Other",30,"7am-11am",0
+"183",97,"Female","Black","Not Married","English","Medicare","Outside NYC","Activated","Other",30,"3pm-7pm",0
+"184",59,"Female","Asian","Married","English","Medicaid","Queens","Inactivated","Side Effects",60,"11am-3pm",0
+"185",22,"Male","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",60,"7am-11am",0
+"186",52,"Female","Black","Not Married","English","Self-pay","Brooklyn","Activated","Side Effects",30,"7am-11am",0
+"187",56,"Female","Asian","Not Married","English","Medicaid","Outside NYC","Activated","Primary Cancer Treatment",30,"11am-3pm",1
+"188",49,"Male","Black","Not Married","English","Medicare","Brooklyn","Activated","Other",30,"11am-3pm",0
+"189",57,"Female","Other","Not Married","Spanish","Commercial","Outside NYC","Activated","Side Effects",30,"7am-11am",0
+"190",61,"Male","Black","Not Married","English","Commercial","Queens","Activated","Other",30,"11am-3pm",1
+"191",51,"Female","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",60,"11am-3pm",1
+"192",33,"Male","White","Not Married","English","Self-pay","Brooklyn","Activated","Other",60,"3pm-7pm",0
+"193",64,"Male","White","Married","English","Commercial","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"194",45,"Male","Black","Married","English","Commercial","Bronx","Activated","Side Effects",30,"11am-3pm",1
+"195",57,"Female","White","Married","Other","Medicaid","Bronx","Pending","Side Effects",30,"3pm-7pm",1
+"196",26,"Male","Asian","Not Married","English","Self-pay","Staten Island","Activated","Other",60,"7am-11am",0
+"197",60,"Male","Other","Not Married","Spanish","Medicare","Bronx","Inactivated","Other",60,"11am-3pm",0
+"198",57,"Male","Asian","Married","English","Commercial","Queens","Activated","Other",30,"7am-11am",1
+"199",72,"Female","Black","Not Married","English","Medicare","Queens","Activated","Other",60,"7am-11am",1
+"200",51,"Male","Other","Not Married","Spanish","Medicare","Brooklyn","Activated","Other",30,"11am-3pm",0
+"201",21,"Female","Black","Not Married","English","Commercial","Bronx","Activated","Side Effects",60,"11am-3pm",0
+"202",71,"Female","White","Married","English","Medicare","Queens","Activated","Side Effects",30,"3pm-7pm",0
+"203",62,"Male","Asian","Married","English","Commercial","Queens","Activated","Other",30,"3pm-7pm",1
+"204",72,"Female","White","Not Married","Other","Medicare","Brooklyn","Activated","Other",30,"3pm-7pm",0
+"205",51,"Male","Asian","Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"11am-3pm",1
+"206",67,"Female","White","Married","English","Commercial","Outside NYC","Pending","Side Effects",60,"11am-3pm",0
+"207",79,"Female","Black","Married","English","Self-pay","Outside NYC","Activated","Other",60,"7am-11am",0
+"208",73,"Male","Asian","Not Married","English","Medicare","Queens","Pending","Side Effects",60,"11am-3pm",0
+"209",90,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Other",30,"3pm-7pm",1
+"210",79,"Female","Other","Married","English","Medicare","Brooklyn","Activated","Primary Cancer Treatment",30,"11am-3pm",0
+"211",66,"Male","White","Married","English","Commercial","Outside NYC","Activated","Other",30,"11am-3pm",1
+"212",38,"Female","White","Not Married","English","Medicaid","Queens","Activated","Side Effects",30,"11am-3pm",0
+"213",32,"Female","Other","Not Married","English","Medicaid","Queens","Activated","Other",30,"11am-3pm",1
+"214",28,"Female","White","Not Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"7am-11am",0
+"215",60,"Male","Asian","Married","Other","Commercial","Queens","Activated","Other",30,"11am-3pm",1
+"216",63,"Male","Black","Married","English","Commercial","Outside NYC","Activated","Other",60,"11am-3pm",0
+"217",28,"Male","Other","Not Married","English","Medicaid","Bronx","Activated","Other",30,"11am-3pm",1
+"218",30,"Female","White","Married","English","Commercial","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"219",75,"Female","Black","Not Married","English","Medicare","Queens","Activated","Side Effects",60,"7am-11am",0
+"220",64,"Male","Other","Married","English","Commercial","Outside NYC","Activated","Other",60,"11am-3pm",0
+"221",56,"Male","Other","Married","English","Commercial","Queens","Activated","Side Effects",30,"3pm-7pm",1
+"222",71,"Male","White","Married","English","Medicare","Outside NYC","Activated","Side Effects",30,"11am-3pm",0
+"223",47,"Female","Other","Not Married","Other","Self-pay","Queens","Activated","Side Effects",30,"7am-11am",0
+"224",56,"Female","Black","Married","English","Commercial","Outside NYC","Activated","Other",60,"11am-3pm",0
+"225",75,"Male","Asian","Married","Other","Medicare","Queens","Pending","Side Effects",30,"11am-3pm",0
+"226",62,"Male","White","Married","English","Medicaid","Staten Island","Activated","Side Effects",60,"11am-3pm",0
+"227",58,"Female","Other","Married","Other","Commercial","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"228",22,"Female","Other","Married","Other","Medicaid","Queens","Activated","Primary Cancer Treatment",60,"7am-11am",0
+"229",54,"Male","Asian","Married","English","Commercial","Queens","Pending","Side Effects",60,"3pm-7pm",0
+"230",71,"Male","White","Not Married","English","Medicaid","Queens","Pending","Side Effects",30,"7am-11am",1
+"231",53,"Female","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",60,"11am-3pm",0
+"232",78,"Male","White","Not Married","English","Medicare","Queens","Activated","Side Effects",60,"11am-3pm",0
+"233",97,"Male","White","Married","English","Self-pay","Manhattan","Pending","Other",60,"11am-3pm",0
+"234",52,"Female","White","Not Married","English","Commercial","Outside NYC","Activated","Side Effects",60,"7am-11am",0
+"235",71,"Male","Other","Married","English","Medicaid","Queens","Activated","Other",30,"3pm-7pm",0
+"236",75,"Female","White","Married","English","Medicare","Manhattan","Activated","Side Effects",60,"7am-11am",0
+"237",64,"Female","White","Married","English","Commercial","Manhattan","Activated","Other",30,"11am-3pm",1
+"238",86,"Female","White","Not Married","English","Medicare","Manhattan","Pending","Other",30,"11am-3pm",0
+"239",69,"Female","Black","Not Married","English","Medicare","Outside NYC","Activated","Other",30,"7am-11am",1
+"240",87,"Female","White","Married","English","Medicare","Manhattan","Activated","Other",30,"7am-11am",1
+"241",48,"Female","White","Not Married","English","Commercial","Queens","Activated","Other",30,"11am-3pm",1
+"242",61,"Male","Black","Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",0
+"243",75,"Female","White","Not Married","English","Self-pay","Manhattan","Activated","Other",30,"11am-3pm",0
+"244",72,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"245",46,"Male","Other","Not Married","English","Medicaid","Manhattan","Activated","Other",30,"11am-3pm",1
+"246",79,"Male","White","Married","English","Medicare","Manhattan","Activated","Other",60,"11am-3pm",0
+"247",71,"Female","Black","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"248",56,"Female","Black","Married","English","Medicaid","Manhattan","Pending","Side Effects",30,"7am-11am",0
+"249",61,"Female","Other","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"3pm-7pm",0
+"250",87,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Primary Cancer Treatment",60,"11am-3pm",0
+"251",72,"Female","White","Married","English","Medicare","Brooklyn","Inactivated","Side Effects",30,"7am-11am",1
+"252",57,"Male","Black","Not Married","English","Medicare","Brooklyn","Pending","Side Effects",15,"7am-11am",0
+"253",77,"Female","Asian","Married","English","Self-pay","Manhattan","Activated","Other",60,"7am-11am",0
+"254",78,"Male","Black","Married","English","Medicare","Manhattan","Activated","Other",30,"7am-11am",1
+"255",49,"Female","Black","Married","English","Commercial","Brooklyn","Pending","Side Effects",60,"11am-3pm",0
+"256",79,"Female","White","Married","English","Medicare","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"257",62,"Male","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"3pm-7pm",1
+"258",66,"Female","Asian","Not Married","Other","Medicare","Queens","Activated","Side Effects",60,"3pm-7pm",0
+"259",89,"Female","Asian","Married","English","Medicare","Brooklyn","Activated","Other",30,"7am-11am",0
+"260",83,"Female","Other","Not Married","English","Medicare","Brooklyn","Pending","Side Effects",60,"7am-11am",0
+"261",48,"Female","White","Married","English","Commercial","Brooklyn","Activated","Other",30,"11am-3pm",0
+"262",75,"Male","Other","Married","English","Commercial","Brooklyn","Inactivated","Side Effects",30,"7am-11am",1
+"263",71,"Female","Other","Married","English","Medicare","Staten Island","Activated","Side Effects",60,"11am-3pm",1
+"264",57,"Female","Black","Not Married","English","Commercial","Manhattan","Activated","Other",30,"7am-11am",0
+"265",41,"Female","Asian","Married","English","Medicaid","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"266",46,"Female","Asian","Not Married","English","Commercial","Outside NYC","Activated","Other",60,"7am-11am",1
+"267",95,"Female","Black","Not Married","English","Medicare","Manhattan","Inactivated","Other",30,"7am-11am",0
+"268",66,"Male","Black","Married","English","Commercial","Brooklyn","Activated","Side Effects",30,"11am-3pm",1
+"269",62,"Female","Other","Not Married","English","Medicare","Bronx","Activated","Primary Cancer Treatment",30,"11am-3pm",1
+"270",81,"Female","White","Married","English","Self-pay","Outside NYC","Activated","Side Effects",30,"11am-3pm",0
+"271",58,"Male","Black","Married","English","Commercial","Brooklyn","Activated","Other",30,"11am-3pm",0
+"272",53,"Female","Black","Not Married","English","Commercial","Queens","Activated","Side Effects",30,"7am-11am",0
+"273",68,"Female","White","Not Married","English","Medicare","Outside NYC","Pending","Other",30,"3pm-7pm",1
+"274",70,"Male","White","Not Married","English","Self-pay","Staten Island","Activated","Other",30,"7am-11am",1
+"275",31,"Female","Black","Not Married","English","Medicaid","Manhattan","Activated","Other",30,"7am-11am",0
+"276",81,"Female","White","Married","English","Medicare","Brooklyn","Activated","Other",60,"7am-11am",1
+"277",67,"Male","White","Married","English","Commercial","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"278",75,"Female","Black","Married","English","Medicare","Brooklyn","Activated","Other",30,"3pm-7pm",1
+"279",87,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Other",60,"7am-11am",0
+"280",53,"Female","White","Married","English","Commercial","Outside NYC","Activated","Other",30,"3pm-7pm",1
+"281",65,"Male","White","Married","English","Commercial","Outside NYC","Activated","Other",30,"11am-3pm",1
+"282",43,"Female","Other","Not Married","English","Medicaid","Queens","Pending","Other",60,"11am-3pm",0
+"283",61,"Male","Black","Married","English","Medicaid","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"284",75,"Female","Other","Not Married","Spanish","Medicare","Queens","Activated","Side Effects",60,"11am-3pm",0
+"285",81,"Female","Other","Married","Spanish","Medicare","Queens","Pending","Side Effects",30,"7am-11am",0
+"286",78,"Female","White","Not Married","English","Self-pay","Manhattan","Activated","Side Effects",60,"7am-11am",0
+"287",79,"Female","Other","Not Married","English","Medicare","Manhattan","Activated","Other",30,"7am-11am",1
+"288",56,"Male","Black","Not Married","English","Medicare","Manhattan","Activated","Other",60,"11am-3pm",0
+"289",66,"Female","Black","Not Married","English","Commercial","Queens","Activated","Other",30,"11am-3pm",1
+"290",63,"Male","Other","Married","Spanish","Medicaid","Bronx","Activated","Other",30,"11am-3pm",0
+"291",98,"Female","Black","Not Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",1
+"292",30,"Female","White","Not Married","English","Medicare","Staten Island","Activated","Other",30,"11am-3pm",1
+"293",54,"Female","Black","Married","English","Commercial","Bronx","Activated","Other",30,"11am-3pm",0
+"294",70,"Female","Black","Not Married","Spanish","Medicare","Brooklyn","Activated","Other",60,"7am-11am",0
+"295",72,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Other",60,"7am-11am",0
+"296",74,"Male","Other","Married","Spanish","Medicare","Bronx","Activated","Primary Cancer Treatment",30,"11am-3pm",0
+"297",70,"Female","Other","Not Married","English","Medicare","Manhattan","Activated","Other",30,"3pm-7pm",0
+"298",56,"Female","Black","Not Married","English","Medicare","Manhattan","Pending","Other",30,"11am-3pm",0
+"299",61,"Female","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"11am-3pm",0
+"300",89,"Female","Black","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"301",65,"Male","White","Married","English","Medicaid","Brooklyn","Activated","Other",60,"11am-3pm",0
+"302",38,"Male","White","Not Married","English","Commercial","Staten Island","Activated","Side Effects",30,"7am-11am",1
+"303",50,"Female","White","Married","English","Commercial","Manhattan","Activated","Side Effects",30,"7am-11am",1
+"304",74,"Female","Other","Not Married","English","Medicare","Manhattan","Pending","Other",30,"7am-11am",0
+"305",70,"Female","Other","Not Married","English","Medicare","Brooklyn","Inactivated","Side Effects",30,"7am-11am",0
+"306",72,"Female","Other","Not Married","Spanish","Medicare","Manhattan","Inactivated","Side Effects",30,"11am-3pm",1
+"307",59,"Male","White","Married","English","Medicare","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"308",79,"Female","Other","Married","English","Medicare","Manhattan","Pending","Other",60,"11am-3pm",0
+"309",58,"Male","Other","Not Married","English","Commercial","Queens","Activated","Side Effects",30,"7am-11am",0
+"310",67,"Female","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"11am-3pm",0
+"311",61,"Male","Other","Married","Spanish","Medicaid","Queens","Pending","Side Effects",60,"3pm-7pm",0
+"312",74,"Male","Black","Not Married","English","Medicare","Manhattan","Activated","Side Effects",30,"11am-3pm",1
+"313",69,"Male","Black","Not Married","English","Medicare","Manhattan","Activated","Primary Cancer Treatment",30,"7am-11am",0
+"314",70,"Male","Other","Married","English","Medicare","Bronx","Pending","Primary Cancer Treatment",30,"11am-3pm",0
+"315",60,"Female","White","Married","English","Commercial","Manhattan","Activated","Side Effects",60,"11am-3pm",1
+"316",49,"Male","Other","Not Married","English","Medicaid","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"317",84,"Male","White","Married","English","Self-pay","Manhattan","Activated","Side Effects",30,"11am-3pm",0
+"318",77,"Female","Black","Not Married","English","Medicare","Manhattan","Pending","Side Effects",30,"11am-3pm",0
+"319",67,"Female","White","Not Married","English","Medicare","Manhattan","Inactivated","Other",60,"11am-3pm",0
+"320",50,"Male","White","Not Married","English","Medicare","Manhattan","Pending","Other",60,"11am-3pm",0
+"321",81,"Female","Asian","Not Married","Other","Medicare","Manhattan","Activated","Side Effects",30,"7am-11am",1
+"322",64,"Female","White","Married","English","Commercial","Manhattan","Activated","Other",30,"11am-3pm",1
+"323",65,"Male","Other","Married","English","Medicaid","Manhattan","Activated","Other",30,"7am-11am",0
+"324",76,"Female","Other","Not Married","English","Medicare","Bronx","Inactivated","Side Effects",60,"11am-3pm",0
+"325",69,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",0
+"326",65,"Female","White","Not Married","English","Medicaid","Manhattan","Inactivated","Other",60,"3pm-7pm",0
+"327",55,"Female","White","Married","English","Commercial","Manhattan","Activated","Other",30,"11am-3pm",1
+"328",44,"Male","White","Not Married","English","Self-pay","Outside NYC","Activated","Other",30,"7am-11am",1
+"329",34,"Male","Asian","Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"7am-11am",1
+"330",58,"Female","White","Married","English","Medicaid","Bronx","Pending","Side Effects",30,"7am-11am",0
+"331",62,"Female","White","Not Married","English","Medicare","Queens","Activated","Side Effects",30,"11am-3pm",0
+"332",39,"Female","Black","Not Married","English","Commercial","Queens","Activated","Other",30,"11am-3pm",1
+"333",76,"Male","White","Married","Other","Self-pay","Queens","Activated","Side Effects",30,"7am-11am",1
+"334",48,"Male","Black","Married","English","Commercial","Outside NYC","Activated","Other",30,"7am-11am",1
+"335",57,"Male","Black","Not Married","English","Medicare","Manhattan","Pending","Other",30,"7am-11am",0
+"336",82,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Side Effects",60,"7am-11am",0
+"337",56,"Male","Asian","Married","Other","Medicaid","Brooklyn","Activated","Primary Cancer Treatment",30,"3pm-7pm",0
+"338",71,"Male","Black","Not Married","English","Medicare","Staten Island","Pending","Primary Cancer Treatment",60,"11am-3pm",0
+"339",73,"Male","Other","Married","English","Medicare","Manhattan","Pending","Other",30,"11am-3pm",0
+"340",49,"Female","Black","Not Married","English","Medicaid","Manhattan","Pending","Side Effects",30,"11am-3pm",0
+"341",83,"Male","White","Married","English","Medicare","Manhattan","Inactivated","Other",60,"11am-3pm",0
+"342",63,"Male","White","Married","English","Commercial","Manhattan","Pending","Side Effects",30,"7am-11am",1
+"343",62,"Female","White","Married","English","Commercial","Brooklyn","Activated","Side Effects",30,"11am-3pm",0
+"344",71,"Female","Black","Not Married","English","Medicare","Bronx","Activated","Primary Cancer Treatment",30,"3pm-7pm",0
+"345",58,"Male","Other","Married","English","Commercial","Brooklyn","Activated","Other",60,"7am-11am",0
+"346",63,"Male","Other","Not Married","English","Medicare","Manhattan","Pending","Other",30,"7am-11am",0
+"347",85,"Female","Other","Not Married","Spanish","Medicare","Manhattan","Activated","Side Effects",30,"3pm-7pm",0
+"348",60,"Female","White","Married","English","Self-pay","Outside NYC","Activated","Other",30,"3pm-7pm",1
+"349",88,"Female","White","Not Married","English","Medicare","Manhattan","Activated","Other",30,"3pm-7pm",1
+"350",56,"Male","White","Not Married","English","Medicaid","Queens","Activated","Other",60,"3pm-7pm",0
+"351",62,"Female","Black","Not Married","English","Medicare","Brooklyn","Inactivated","Side Effects",60,"7am-11am",0
+"352",66,"Female","Asian","Married","English","Medicare","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"353",51,"Male","Black","Married","English","Commercial","Manhattan","Activated","Other",30,"11am-3pm",0
+"354",79,"Male","White","Married","English","Medicare","Manhattan","Activated","Other",30,"3pm-7pm",1
+"355",81,"Female","White","Not Married","English","Medicare","Queens","Activated","Primary Cancer Treatment",60,"11am-3pm",0
+"356",56,"Male","Black","Married","English","Medicaid","Brooklyn","Pending","Other",30,"11am-3pm",0
+"357",60,"Male","Other","Not Married","English","Medicare","Brooklyn","Pending","Side Effects",30,"11am-3pm",0
+"358",78,"Male","White","Married","English","Medicare","Manhattan","Activated","Side Effects",30,"11am-3pm",0
+"359",52,"Male","Asian","Married","English","Commercial","Manhattan","Activated","Other",60,"11am-3pm",1
+"360",65,"Female","White","Married","English","Self-pay","Brooklyn","Activated","Other",60,"11am-3pm",0
+"361",82,"Female","Black","Not Married","English","Medicare","Manhattan","Pending","Side Effects",30,"11am-3pm",1
+"362",61,"Female","Other","Not Married","English","Medicare","Manhattan","Activated","Other",30,"11am-3pm",1
+"363",70,"Female","Other","Not Married","Spanish","Medicare","Bronx","Pending","Side Effects",60,"11am-3pm",0
+"364",64,"Female","Other","Not Married","English","Medicaid","Manhattan","Pending","Side Effects",30,"7am-11am",0
+"365",54,"Male","White","Not Married","English","Commercial","Manhattan","Activated","Other",60,"11am-3pm",0
+"366",82,"Female","White","Married","English","Medicare","Manhattan","Inactivated","Side Effects",30,"11am-3pm",1
+"367",77,"Male","Asian","Married","Other","Medicare","Manhattan","Activated","Side Effects",15,"7am-11am",1
+"368",54,"Female","Other","Married","Other","Medicaid","Brooklyn","Activated","Side Effects",60,"3pm-7pm",0
+"369",59,"Female","Black","Not Married","English","Medicare","Bronx","Activated","Side Effects",30,"7am-11am",1
+"370",60,"Female","White","Not Married","Spanish","Medicaid","Bronx","Activated","Side Effects",15,"7am-11am",1
+"371",42,"Female","Black","Not Married","English","Medicaid","Manhattan","Inactivated","Other",60,"11am-3pm",0
+"372",78,"Male","Other","Married","English","Self-pay","Queens","Pending","Primary Cancer Treatment",30,"3pm-7pm",0
+"373",94,"Female","Asian","Married","English","Commercial","Manhattan","Pending","Side Effects",60,"7am-11am",0
+"374",48,"Female","White","Married","Spanish","Medicare","Manhattan","Pending","Other",30,"7am-11am",0
+"375",66,"Female","Asian","Married","English","Medicare","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"376",60,"Male","Black","Not Married","English","Medicaid","Queens","Activated","Side Effects",15,"7am-11am",1
+"377",66,"Male","Other","Not Married","English","Commercial","Manhattan","Activated","Side Effects",30,"11am-3pm",1
+"378",74,"Female","White","Married","English","Medicare","Manhattan","Activated","Other",20,"11am-3pm",1
+"379",71,"Female","Other","Not Married","English","Medicare","Outside NYC","Activated","Other",30,"11am-3pm",0
+"380",67,"Male","Other","Married","Spanish","Commercial","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"381",56,"Male","White","Not Married","English","Commercial","Manhattan","Inactivated","Side Effects",30,"7am-11am",1
+"382",59,"Male","Asian","Not Married","Other","Medicare","Queens","Inactivated","Side Effects",60,"7am-11am",0
+"383",60,"Male","Other","Married","English","Commercial","Bronx","Inactivated","Side Effects",60,"11am-3pm",0
+"384",59,"Female","Asian","Married","Other","Medicaid","Brooklyn","Activated","Primary Cancer Treatment",60,"11am-3pm",0
+"385",63,"Male","Black","Not Married","English","Self-pay","Staten Island","Inactivated","Side Effects",30,"11am-3pm",0
+"386",70,"Male","Black","Not Married","English","Medicare","Brooklyn","Pending","Side Effects",30,"11am-3pm",0
+"387",60,"Female","Black","Not Married","English","Medicaid","Manhattan","Inactivated","Other",30,"11am-3pm",0
+"388",68,"Female","Black","Married","English","Medicare","Brooklyn","Activated","Other",30,"7am-11am",0
+"389",52,"Male","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"7am-11am",0
+"390",44,"Female","White","Married","English","Medicaid","Manhattan","Activated","Side Effects",60,"11am-3pm",1
+"391",87,"Male","Other","Not Married","English","Medicare","Bronx","Pending","Other",30,"7am-11am",0
+"392",65,"Female","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",60,"11am-3pm",1
+"393",59,"Male","Other","Not Married","Spanish","Commercial","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"394",65,"Female","Asian","Married","Other","Medicaid","Brooklyn","Pending","Other",60,"11am-3pm",0
+"395",66,"Male","Other","Not Married","English","Medicare","Outside NYC","Pending","Side Effects",30,"7am-11am",1
+"396",70,"Male","White","Married","English","Medicare","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"397",69,"Male","White","Married","English","Medicare","Outside NYC","Activated","Side Effects",60,"7am-11am",0
+"398",57,"Female","Black","Not Married","English","Medicaid","Manhattan","Activated","Side Effects",30,"7am-11am",0
+"399",63,"Male","Other","Married","English","Commercial","Outside NYC","Activated","Side Effects",60,"7am-11am",0
+"400",86,"Male","White","Not Married","English","Medicare","Manhattan","Inactivated","Other",30,"11am-3pm",1
+"401",70,"Male","Other","Not Married","English","Commercial","Brooklyn","Activated","Side Effects",30,"3pm-7pm",0
+"402",74,"Female","Other","Not Married","English","Medicare","Manhattan","Activated","Other",60,"11am-3pm",0
+"403",58,"Female","Black","Married","English","Medicare","Bronx","Activated","Other",30,"7am-11am",0
+"404",62,"Male","Asian","Not Married","Other","Medicaid","Brooklyn","Inactivated","Other",30,"11am-3pm",0
+"405",64,"Female","Asian","Married","Other","Medicaid","Queens","Activated","Primary Cancer Treatment",30,"3pm-7pm",0
+"406",78,"Male","Black","Married","English","Medicare","Outside NYC","Activated","Side Effects",60,"7am-11am",0
+"407",71,"Male","Asian","Married","Other","Self-pay","Manhattan","Pending","Other",60,"7am-11am",0
+"408",75,"Female","Black","Not Married","English","Medicare","Brooklyn","Activated","Side Effects",30,"7am-11am",1
+"409",47,"Female","White","Not Married","English","Medicaid","Staten Island","Activated","Other",60,"11am-3pm",0
+"410",64,"Male","Other","Not Married","English","Medicaid","Manhattan","Activated","Other",60,"3pm-7pm",0
+"411",61,"Female","Black","Married","English","Commercial","Outside NYC","Pending","Side Effects",30,"11am-3pm",0
+"412",57,"Male","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"11am-3pm",1
+"413",73,"Female","Other","Not Married","English","Medicare","Manhattan","Activated","Side Effects",15,"7am-11am",1
+"414",54,"Male","Asian","Married","Other","Commercial","Queens","Pending","Side Effects",30,"7am-11am",0
+"415",63,"Male","White","Not Married","English","Medicare","Manhattan","Inactivated","Side Effects",30,"11am-3pm",0
+"416",80,"Female","Black","Not Married","English","Medicare","Brooklyn","Activated","Side Effects",30,"11am-3pm",0
+"417",36,"Male","Asian","Married","English","Commercial","Queens","Activated","Other",60,"11am-3pm",0
+"418",52,"Female","Other","Not Married","Spanish","Medicaid","Manhattan","Activated","Side Effects",30,"3pm-7pm",0
+"419",55,"Female","White","Not Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"11am-3pm",0
+"420",50,"Male","Other","Married","Spanish","Medicaid","Manhattan","Activated","Other",30,"11am-3pm",0
+"421",42,"Female","Other","Not Married","Spanish","Self-pay","Queens","Activated","Other",30,"11am-3pm",1
+"422",47,"Female","Other","Married","Spanish","Medicaid","Queens","Activated","Side Effects",30,"7am-11am",1
+"423",59,"Male","White","Married","English","Commercial","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"424",36,"Female","Other","Not Married","English","Medicaid","Manhattan","Activated","Side Effects",30,"7am-11am",1
+"425",70,"Male","Asian","Married","Other","Medicare","Manhattan","Inactivated","Other",60,"7am-11am",0
+"426",39,"Female","Other","Not Married","English","Self-pay","Queens","Activated","Other",30,"11am-3pm",1
+"427",57,"Male","Other","Not Married","English","Medicaid","Queens","Inactivated","Other",30,"11am-3pm",1
+"428",56,"Female","Black","Not Married","English","Commercial","Brooklyn","Activated","Side Effects",30,"11am-3pm",0
+"429",30,"Female","Asian","Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"3pm-7pm",1
+"430",65,"Male","Other","Not Married","English","Medicaid","Bronx","Activated","Side Effects",60,"11am-3pm",1
+"431",46,"Male","Other","Married","English","Medicaid","Bronx","Activated","Other",30,"11am-3pm",0
+"432",58,"Male","Black","Not Married","English","Medicaid","Manhattan","Inactivated","Side Effects",60,"11am-3pm",0
+"433",69,"Female","Black","Not Married","English","Medicare","Manhattan","Activated","Other",60,"11am-3pm",0
+"434",55,"Female","Black","Not Married","English","Medicaid","Manhattan","Pending","Side Effects",30,"7am-11am",0
+"435",49,"Female","Black","Married","Other","Medicaid","Manhattan","Pending","Side Effects",30,"7am-11am",1
+"436",51,"Male","White","Married","English","Commercial","Outside NYC","Pending","Side Effects",30,"11am-3pm",0
+"437",70,"Male","White","Married","English","Self-pay","Staten Island","Activated","Other",60,"11am-3pm",0
+"438",47,"Male","White","Not Married","English","Medicaid","Brooklyn","Activated","Other",30,"7am-11am",1
+"439",44,"Male","Black","Married","English","Medicaid","Queens","Inactivated","Side Effects",30,"11am-3pm",0
+"440",38,"Male","Asian","Married","English","Commercial","Brooklyn","Activated","Other",30,"7am-11am",1
+"441",83,"Female","Asian","Married","Other","Medicare","Manhattan","Activated","Side Effects",60,"11am-3pm",0
+"442",63,"Female","Black","Not Married","English","Medicare","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"443",70,"Male","Black","Married","English","Commercial","Queens","Activated","Side Effects",30,"7am-11am",0
+"444",42,"Male","Other","Married","English","Medicaid","Queens","Activated","Side Effects",30,"11am-3pm",1
+"445",45,"Male","Other","Not Married","English","Medicaid","Outside NYC","Activated","Side Effects",30,"3pm-7pm",0
+"446",77,"Male","Other","Married","English","Medicare","Brooklyn","Activated","Side Effects",30,"3pm-7pm",1
+"447",49,"Male","Black","Married","English","Medicaid","Bronx","Activated","Side Effects",30,"11am-3pm",1
+"448",30,"Male","Black","Not Married","English","Medicaid","Bronx","Activated","Primary Cancer Treatment",30,"3pm-7pm",1
+"449",57,"Female","Black","Married","English","Medicare","Manhattan","Inactivated","Side Effects",30,"11am-3pm",1
+"450",71,"Male","Black","Not Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"451",54,"Male","White","Not Married","English","Medicaid","Outside NYC","Activated","Other",30,"11am-3pm",0
+"452",91,"Female","White","Not Married","English","Medicare","Brooklyn","Activated","Side Effects",60,"7am-11am",0
+"453",57,"Male","Asian","Married","English","Medicaid","Queens","Activated","Side Effects",30,"11am-3pm",0
+"454",59,"Male","Other","Married","English","Commercial","Queens","Inactivated","Side Effects",30,"11am-3pm",0
+"455",70,"Male","White","Married","English","Medicare","Brooklyn","Activated","Side Effects",30,"11am-3pm",1
+"456",56,"Male","Other","Not Married","English","Medicare","Bronx","Activated","Other",60,"7am-11am",0
+"457",60,"Female","White","Not Married","English","Commercial","Queens","Activated","Other",30,"11am-3pm",1
+"458",65,"Male","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"7am-11am",1
+"459",55,"Female","Other","Married","English","Medicaid","Brooklyn","Inactivated","Side Effects",30,"11am-3pm",1
+"460",64,"Male","White","Married","English","Commercial","Outside NYC","Activated","Side Effects",30,"11am-3pm",1
+"461",40,"Male","Other","Not Married","English","Commercial","Queens","Inactivated","Side Effects",30,"7am-11am",1
+"462",72,"Female","Black","Married","English","Medicare","Outside NYC","Activated","Side Effects",60,"11am-3pm",0
+"463",40,"Male","White","Not Married","Other","Medicaid","Queens","Activated","Other",60,"11am-3pm",0
+"464",48,"Male","Other","Not Married","English","Medicaid","Queens","Activated","Side Effects",60,"7am-11am",0
+"465",62,"Female","Black","Married","English","Self-pay","Queens","Activated","Side Effects",30,"11am-3pm",0
+"466",72,"Female","Asian","Not Married","English","Commercial","Manhattan","Activated","Side Effects",60,"7am-11am",0
+"467",38,"Male","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"11am-3pm",1
+"468",59,"Male","White","Not Married","English","Medicaid","Queens","Pending","Side Effects",60,"11am-3pm",0
+"469",63,"Male","Other","Married","English","Medicaid","Brooklyn","Activated","Side Effects",60,"11am-3pm",0
+"470",60,"Male","White","Not Married","Other","Medicaid","Brooklyn","Activated","Other",30,"11am-3pm",1
+"471",30,"Male","Black","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",30,"11am-3pm",0
+"472",66,"Female","Asian","Married","Other","Medicare","Staten Island","Activated","Side Effects",30,"11am-3pm",1
+"473",47,"Female","Other","Not Married","English","Medicaid","Brooklyn","Activated","Side Effects",60,"7am-11am",0
+"474",79,"Male","Other","Married","Other","Medicaid","Queens","Activated","Side Effects",60,"11am-3pm",0
+"475",41,"Female","Other","Not Married","Spanish","Medicaid","Brooklyn","Pending","Side Effects",60,"11am-3pm",0
+"476",74,"Male","White","Married","English","Commercial","Outside NYC","Activated","Other",60,"7am-11am",0
